@@ -7,4 +7,4 @@ functions:
     lang: Dockerfile
     handler: .
     fprocess: xargs nslookup
-    image: jockdarock/nslookupfaas:master
+    image: jockdarock/nslookup-arm-faas:latest-armhf
