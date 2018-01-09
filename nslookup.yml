@@ -1,0 +1,10 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080  # can be a remote server
+
+functions:
+  nslookup:
+    lang: Dockerfile
+    handler: .
+    fprocess: xargs nslookup
+    image: jockdarock/nslookupfaas:master
